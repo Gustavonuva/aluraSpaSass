@@ -1,0 +1,18 @@
+import styles\abstract\_variaveis.scss
+
+@mixin bg-cores($lado, $cores...)
+    @if $lado == right
+        background: linear-gradient(to left, $cores)
+    @else 
+        background: linear-gradient(to right, $cores)
+
+footer
+    text-align: center
+    font-size: $tamanho-texto-principal / 2
+    border-top: 2px solid $cor-primaria
+    padding: 1.2rem
+    margin-top: 1rem
+    @include bg-cores("", $cor-primaria, $cor-secundaria, $cor-terciaria, $cor-terciaria)
+    
+    i
+        color: red

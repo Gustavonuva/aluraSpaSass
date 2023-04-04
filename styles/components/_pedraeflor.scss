@@ -1,0 +1,30 @@
+@import "../abstract/variaveis";
+
+#pedraeflor {
+  padding: 3rem;
+  text-align: center;
+
+  .img-pedra {
+    padding-bottom: 2px;
+    img {
+      max-width: 100%;
+      background-size: cover;
+    }
+  }
+  .texto {
+    h3 {
+      font-size: $tamanho-texto-principal / 1.2;
+      text-align: center;
+      color: $cor-primaria;
+    }
+    h4 {
+      font-size: $tamanho-texto-principal / 2;
+      color: $cor-secundaria;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: $tamanho-texto-principal / 2.4;
+    }
+  }
+}
